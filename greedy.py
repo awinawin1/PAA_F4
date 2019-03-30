@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Mar 29 17:32:09 2019
-
 @author: ASUS
 """
 import heapq
@@ -18,7 +17,7 @@ def Greedy(map, start, goal):
 	while pq:
 		current = heapq.heappop(pq)[1] #push city to priorityque
 		print()
-		print('----------Step {}----------'.format(cnt))
+		print('Step -{}'.format(cnt))
 		cnt+=1
 		print('Now at {}'.format(current)) #print current city
 
@@ -49,4 +48,4 @@ def Greedy(map, start, goal):
 				gn[c_name] = gn_temp		#update or set g(n)
 				fn[c_name] = fn_temp		#update or set f(n)
 
-	return None
+#return None
